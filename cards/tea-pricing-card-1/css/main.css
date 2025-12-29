@@ -1,0 +1,102 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.pricing-heading {
+  margin: 2rem 0;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 25px;
+  width: 320px;
+  border-radius: 8px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.pricing-card:hover {
+  transform: translateY(-4px);
+  transition: 0.2s ease;
+}
+.pricing-card.popular {
+  border: 2px solid #ffa500;
+  position: relative;
+}
+
+.popular-badge {
+  background-color: rgb(255, 136, 0);
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border-radius: 24px;
+  position: absolute;
+  top: -17px;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2a2a2a;
+}
+
+.period {
+  color: #666666;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: center;
+}
+.features li {
+  list-style-type: "🍵";
+  color: #666666;
+}
+
+.subscribe-btn {
+  border: none;
+  background-color: #ffa500;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.subscribe-btn:hover {
+  background-color: #e89905;
+}
+
+/*# sourceMappingURL=main.css.map */

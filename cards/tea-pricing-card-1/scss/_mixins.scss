@@ -1,0 +1,20 @@
+@mixin flex-center($direction: row) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin button($bg, $bg-hover) {
+  border: none;
+  background-color: $bg;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: $radius-lg;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    background-color: $bg-hover;
+  }
+}
