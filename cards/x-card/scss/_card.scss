@@ -1,0 +1,77 @@
+body {
+  background-color: #000;
+}
+
+main {
+  @include flex(row, 1rem);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+
+  // Card
+
+  .card {
+    background-image: $gradient;
+    color: $primary-text-color;
+    padding: 20px;
+    width: 100%;
+    max-width: 390px;
+    border-radius: $primary-radius;
+    border-top: 2px solid $primary-border-color;
+
+    @include flex(column, 1.5rem);
+
+    &:nth-child(2) {
+      border: 2px solid $primary-text-color;
+    }
+  }
+}
+
+// Heading
+
+.heading {
+  h3 {
+    font-size: $heading-font-size;
+  }
+}
+
+// {ricing
+.pricing {
+  h2 {
+    font-size: $pricing-font-size;
+  }
+  .small-font {
+    font-size: $small-font-size;
+    font-weight: 500;
+    color: $secondary-text-color;
+  }
+  p {
+    margin-top: 0.4rem;
+    font-size: 15px;
+    color: $secondary-text-color;
+  }
+}
+
+// Badge
+.badge {
+  font-size: calc(#{$small-font-size} - 4px);
+
+  background-color: $primary-bg-color;
+  padding: 2px;
+  border-radius: calc(#{$primary-radius} / 2);
+  border-top: 1px solid $primary-border-color;
+}
+
+// Service
+.service {
+  ul {
+    @include flex(column, 1rem);
+
+    li {
+      display: flex; // display: inline-block;
+      align-items: center;
+      gap: 0.6rem;
+    }
+  }
+}

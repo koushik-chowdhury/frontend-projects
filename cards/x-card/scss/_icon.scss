@@ -1,0 +1,13 @@
+.icon {
+  font-size: $icon-size;
+  padding: 5px;
+  background: $primary-bg-color;
+  color: $icon-color;
+  border-radius: $primary-radius;
+  border-top: 1px solid $primary-border-color;
+  // margin-right: 0.6rem;
+}
+
+.ri-icon {
+  color: #919090;
+}
