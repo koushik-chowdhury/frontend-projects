@@ -1,0 +1,38 @@
+
+@media (max-width: 767px) {
+  nav {
+    width: 100px;
+    padding-left: 0rem;
+
+    ul {
+      padding-left: 1rem;
+    }
+  }
+
+  .menu-item {
+    position: absolute;
+    top: 120%;
+    left: 0%;
+
+
+    background-color: #3a3a3a;
+    color: #fff;
+    border: 1px solid #444447;
+
+    padding: 0.4rem 0.5rem;
+    border-radius: 4px;
+
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none; // avoids flicker
+
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 999;
+  }
+  li .menu-item {
+    font-size: 0.8rem;
+  }
+  li:hover .menu-item {
+    opacity: 1;
+  }
+}
