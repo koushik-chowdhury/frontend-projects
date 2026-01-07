@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav {
+  max-width: 400px;
+  height: 100vh;
+  border-right: 1px solid #fff;
+  background-color: black;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1rem;
+  padding-left: 5rem;
+}
+
+nav li {
+  position: relative;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.8rem;
+  padding-inline: 7px;
+  padding-block: 7px;
+  transition: all 0.2s ease;
+}
+
+nav li:hover {
+  background-color: #2a2a2a;
+  border-radius: 12px;
+}
+
+nav .menu-item {
+  font-size: 1.4rem;
+  font-family: sans-serif;
+}
+
+@media (max-width: 767px) {
+  nav {
+    width: 100px;
+    padding-left: 0rem;
+  }
+  nav ul {
+    padding-left: 1rem;
+  }
+  .menu-item {
+    position: absolute;
+    top: 120%;
+    left: 0%;
+    background-color: #3a3a3a;
+    color: #fff;
+    border: 1px solid #444447;
+    padding: 0.4rem 0.5rem;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 999;
+  }
+  li .menu-item {
+    font-size: 0.8rem;
+  }
+  li:hover .menu-item {
+    opacity: 1;
+  }
+}
+.btn {
+  padding: 14px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
