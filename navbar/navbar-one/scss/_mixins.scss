@@ -1,0 +1,25 @@
+@mixin flex($direction, $gap) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: wrap;
+  gap: $gap;
+}
+
+@mixin button($bg-color, $hover-color) {
+  border: none;
+  padding-inline: 16px;
+  padding-block: 10px;
+    border-radius: $primary-border-radius;
+  background-color: $bg-color;
+    color: $primary-btn-text;
+  cursor: pointer;
+
+  font-family: sans-serif;
+  font-size: 18px;
+
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}

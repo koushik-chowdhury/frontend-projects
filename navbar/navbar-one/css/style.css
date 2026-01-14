@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a1a;
+}
+
+.btn.signup {
+  border: none;
+  padding-inline: 16px;
+  padding-block: 10px;
+  border-radius: 8px;
+  background-color: #f97316;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.btn.signup:hover {
+  background-color: #d55900;
+}
+
+.btn.login {
+  border: none;
+  padding-inline: 16px;
+  padding-block: 10px;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.btn.login:hover {
+  background-color: #1a1a1a;
+}
+
+nav {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3a3a3a;
+  padding-inline: 18px;
+  padding-block: 6px;
+  border-bottom: 0.5px solid #5f5f5f;
+}
+
+nav .logo img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
